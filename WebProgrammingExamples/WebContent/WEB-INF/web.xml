@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>WebProgrammingExamples</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+      <servlet>
+      <servlet-name>ServletLifecycle</servlet-name>
+      <servlet-class>LifeCycleServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+      <servlet-name>ServletLifecycle</servlet-name>
+      <url-pattern>/Servlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>HelloWorld</servlet-name>
+      <servlet-class>HelloServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+      <servlet-name>HelloWorld</servlet-name>
+      <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>Email1</servlet-name>
+      <servlet-class>CreditCardDetailsServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+      <servlet-name>Email1</servlet-name>
+      <url-pattern>/CreditCardDetailsServlet</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+      <servlet-name>Original</servlet-name>
+      <servlet-class>OriginalServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+      <servlet-name>Original</servlet-name>
+      <url-pattern>/OriginalServlet</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+      <servlet-name>Redirect</servlet-name>
+      <servlet-class>RedirectedToServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+      <servlet-name>Redirect</servlet-name>
+      <url-pattern>/RedirectedToServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

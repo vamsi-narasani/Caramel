@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>A sample form using HTML and Servlets</TITLE>
+</HEAD>
+
+<BODY BGCOLOR = "#FDFE6">
+<H1 ALIGN = "CENTER">A sample form using GET</H1>
+<FORM ACTION = "CreditCardDetailsServlet" METHOD = "GET">
+
+Item Number: <INPUT TYPE = "TEXT" NAME = "itemNum"><BR>
+Description: <INPUT TYPE = "TEXT" NAME = "description"><BR>
+Unit Price: <INPUT TYPE = "TEXT" NAME = "price" value = "Rs."><BR>
+<HR>
+
+First Name: <INPUT TYPE = "TEXT" NAME = "firstName" ><BR>
+Middle Initial: <INPUT TYPE = "TEXT" NAME = "middle" ><BR>
+Last Name: <INPUT TYPE = "TEXT" NAME = "lastName" ><BR>
+<HR>
+
+Address: <TEXTAREA NAME = "address" ROWS = 3 COLS = 40 ></TEXTAREA><BR>
+<HR>
+
+<B>Credit Card Details</B><BR>
+
+&nbsp;&nbsp;<INPUT TYPE = "RADIO" NAME = "cardType" value = "Visa"><BR>
+&nbsp;&nbsp;<INPUT TYPE = "RADIO" NAME = "cardType" value = "Master"><BR>
+&nbsp;&nbsp;<INPUT TYPE = "RADIO" NAME = "cardType" value = "Amex"><BR>
+&nbsp;&nbsp;<INPUT TYPE = "RADIO" NAME = "cardType" value = "Other"><BR>
+
+Credit Card Number: <INPUT TYPE = "PASSWORD" NAME = "cardNum"><BR>
+<HR><HR>
+
+<INPUT TYPE = "SUBMIT" VALUE = "Submit Order">
+
+</FORM>
+</BODY>
+</HTML>
